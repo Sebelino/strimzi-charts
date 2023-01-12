@@ -1,3 +1,3 @@
 # strimzi-charts
 
-Strimzi-related Helm charts.
+[Strimzi](https://strimzi.io/)-related Helm charts.
