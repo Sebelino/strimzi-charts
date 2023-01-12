@@ -1,1 +1,10 @@
 # Default values for strimzi-topic-operator.
+
+# STRIMZI_RESOURCE_LABELS
+strimzi_resource_labels: "strimzi.io/cluster=my-cluster"
+
+# STRIMZI_KAFKA_BOOTSTRAP_SERVERS
+strimzi_kafka_bootstrap_servers: "broker-1:9094,broker-2:9094,broker-3:9094"
+
+# STRIMZI_ZOOKEEPER_CONNECT
+strimzi_zookeeper_connect: "zookeeper-1:2182,zookeeper-2:2182,zookeeper-3:2182"
