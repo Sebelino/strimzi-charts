@@ -5,21 +5,21 @@ Helm chart for the
 
 ## Show package
 ```bash
-helm show all oci://ghcr.io/sebelino/strimzi-topic-operator --version 0.1.0
+helm show all oci://ghcr.io/sebelino/strimzi-topic-operator --version 0.2.0
 ```
 
 ## Install package
 ```bash
-helm install strimzi-topic-operator oci://ghcr.io/sebelino/strimzi-topic-operator --namespace strimzi --version 0.1.0
+helm install strimzi-topic-operator oci://ghcr.io/sebelino/strimzi-topic-operator --namespace strimzi --version 0.2.0
 ```
 
 ## Build package
 ```bash
 helm package .
-ls strimzi-topic-operator-0.1.0.tgz
+ls strimzi-topic-operator-0.2.0.tgz
 ```
 
 ## Publish package
 ```bash
-helm push strimzi-topic-operator-0.1.0.tgz oci://ghcr.io/sebelino
+helm push strimzi-topic-operator-0.2.0.tgz oci://ghcr.io/sebelino
 ```

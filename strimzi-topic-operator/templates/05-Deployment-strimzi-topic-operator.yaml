@@ -30,11 +30,11 @@ spec:
               mountPath: /tmp
           env:
             - name: STRIMZI_RESOURCE_LABELS
-              value: "{{ .Values.strimzi_resource_labels }}"
+              value: {{ .Values.resourceLabels }}
             - name: STRIMZI_KAFKA_BOOTSTRAP_SERVERS
-              value: "{{ .Values.strimzi_kafka_bootstrap_servers }}"
+              value: {{ join "," .Values.kafkaBootstrapServers }}
             - name: STRIMZI_ZOOKEEPER_CONNECT
-              value: "{{ .Values.strimzi_zookeeper_connect }}"
+              value: {{ join "," .Values.zookeeperConnect }}
             - name: STRIMZI_ZOOKEEPER_SESSION_TIMEOUT_MS
               value: "18000"
             - name: STRIMZI_FULL_RECONCILIATION_INTERVAL_MS
