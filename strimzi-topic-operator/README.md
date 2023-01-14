@@ -3,6 +3,8 @@
 Helm chart for the
 [standalone Strimzi Topic Operator](https://github.com/strimzi/strimzi-kafka-operator/tree/0.32.0/install/topic-operator).
 
+[Example usage.](https://github.com/algodx-ab/eks-blueprints-add-ons/blob/d4441134c2cf576a9f138643a522eefe8b758553/add-ons/strimzi-topic-operator/Chart.yaml)
+
 ## Show package
 ```bash
 helm show all oci://ghcr.io/sebelino/strimzi-topic-operator --version 0.2.0
