@@ -5,12 +5,12 @@ Helm chart for the
 
 [Example usage.](https://github.com/algodx-ab/eks-blueprints-add-ons/blob/d4441134c2cf576a9f138643a522eefe8b758553/add-ons/strimzi-topic-operator/Chart.yaml)
 
-## Show package
+## Show chart
 ```bash
 helm show all oci://ghcr.io/sebelino/strimzi-topic-operator --version 0.2.0
 ```
 
-## Install package
+## Install chart
 ```bash
 helm install strimzi-topic-operator oci://ghcr.io/sebelino/strimzi-topic-operator --namespace strimzi --version 0.2.0
 ```
@@ -32,7 +32,7 @@ helm package .
 ls strimzi-topic-operator-0.2.0.tgz
 ```
 
-## Publish package
+## Publish chart
 ```bash
 helm push strimzi-topic-operator-0.2.0.tgz oci://ghcr.io/sebelino
 ```
